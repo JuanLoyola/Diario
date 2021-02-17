@@ -5,12 +5,11 @@
 }
 
 body {
-    background-color: #000000;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23b63e59' fill-opacity='0.1' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    font-size: 16px;
-    font-family: 'Oswald', sans-serif;
-    color: #fff;
-    }  
+    background-color: #f2f5f5;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+}  
 
 a{
     color: #fff;
@@ -29,7 +28,7 @@ ul{
 
 /* Navegacion*/
 .nav-main{
-    font-size: 17px;
+    font-size: 13px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,9 +49,11 @@ ul{
 }
 .nav-main ul li a{
     padding: 6px;
+    color: #333;
+    font-weight: 600;
 }
 .nav-main ul li a:hover{
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #333;
 }
 
 .nav-main ul.nav-menu{
@@ -71,13 +72,19 @@ hr{
 .showcase{
     width: 100%;
     height: 550px;
-    background:url(https://raw.githubusercontent.com/FaztWeb/technews-html/master/img/showcase2.jpg) no-repeat center center/cover;
+    background:url('../assets/news1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 60%;
     padding-bottom: 50px;
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+    color: #fff;
+    font-weight: 600;
+    text-shadow: #333 3px 3px 3px;
 }
 
 .btn{
@@ -86,11 +93,15 @@ hr{
     border: 0;
     font-weight: bold;
     padding: 10px 20px;
-    background: #262626;
-    color: #fff;
+    background: #8739f9;
+    color: #f2f5f5;
     font-size: 15px;
     border: 1px solid #fff;
+    border-radius: 9px;
     margin: 10px 0px;
+    -webkit-box-shadow: 0px 6px 9px 0px rgba(148,138,148,0.45);
+    -moz-box-shadow: 0px 6px 9px 0px rgba(148,138,148,0.45);
+    box-shadow: 0px 6px 9px 0px rgba(148,138,148,0.45);
 }
 .btn:hover{
     opacity: .7;
@@ -106,12 +117,15 @@ hr{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;  /*espaciado entre columnas*/
-    margin:10px 0 ;
+    margin:10px 0;
 }
 
 .new-cards img{
     width: 100%;
     height: 180px;
+    -webkit-box-shadow: 0px 6px 9px 0px rgba(148,138,148,0.45);
+    -moz-box-shadow: 0px 6px 9px 0px rgba(148,138,148,0.45);
+    box-shadow: 0px 6px 9px 0px rgba(148,138,148,0.75);
 }
 
 .new-cards h3{
@@ -133,14 +147,20 @@ hr{
 .cards-banner-one{
     width: 100%;
     height: 350px;
-    background: url(https://raw.githubusercontent.com/FaztWeb/technews-html/master/img/tech-red.jpg) no-repeat center center/cover;
+    background: url('../assets/banner2.jpg');
+    background-repeat: no-repeat;
+    background-position-y: 30%;
+    background-size: cover;
     margin-bottom: 40px;
+    -webkit-box-shadow: 0px 6px 9px 0px rgba(148,138,148,0.85);
+    -moz-box-shadow: 0px 6px 9px 0px rgba(148,138,148,0.85);
+    box-shadow: 0px 6px 9px 0px rgba(148,138,148,0.85);
 }
 
 .cards-banner-one .content{
-    width: 40%;
+    width: 30%;
     padding: 90px 0 0 30px;
-    color: #fff;
+    color: #f1f1f1;
 }
 
 .cards-banner-one p,
@@ -152,11 +172,23 @@ hr{
 .cards-banner-two{
     width: 100%;
     height: 350px;
-    background: url(https://raw.githubusercontent.com/FaztWeb/technews-html/master/img/image-five.jpg) no-repeat center center/cover;
+    background: url('../assets/banner2.jpg');
+    background-repeat: no-repeat;
+    background-position-y: 30%;
+    background-size: cover;
+    -webkit-box-shadow: 0px 6px 9px 0px rgba(148,138,148,0.85);
+    -moz-box-shadow: 0px 6px 9px 0px rgba(148,138,148,0.85);
+    box-shadow: 0px 6px 9px 0px rgba(148,138,148,0.85);
 }
 .cards-banner-two .content{
-    width: 50%;
-    padding: 100px 0 0 30px;
+    width: 30%;
+    padding: 90px 0 0 30px;
+    color: #f1f1f1;
+}
+
+.cards-banner-two p,
+.cards-banner-two h2 {
+    margin: 10px 0 20px 0;
 }
 
 /*social*/
@@ -167,8 +199,7 @@ hr{
 
 .social p{
     text-align: center;
-    font-size: 30px;
-    margin-bottom: 20px;
+    font-size: 1.5rem;
 }
 
 .links{
@@ -178,18 +209,183 @@ hr{
 }
 
 .links a{
-    margin: 0 30px;
+    color: #37b9f1;
 }
 
 .links a i{
-    font-size: 3rem;
+    font-size: 2rem;
+    filter: drop-shadow(0px 0px 2px rgb(100, 100, 100));
 }
 
 /*footer*/
-.footer{
-    margin: 50px;
-}
 
 .footer p{
     text-align: center;
+    font-size: 0.7rem;
+}
+
+@media (max-width: 1023px) {
+    body {
+        font-size: 1rem;
+    }  
+    
+    a{
+        margin: 10px;
+    }
+    
+    .container{
+        width: 90%;
+        margin: auto;
+    }
+    
+    /* Navegacion*/
+    .nav-main{
+        font-size: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        padding: 10px 0;
+    }
+    .showcase{
+        background-position:center;
+        padding-bottom: 20px;
+        margin-bottom: 10px;
+        justify-content: flex-end;
+        text-align: center;
+    }
+    
+    /*Noticias*/
+    .new-cards{
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .cards-banner-one{
+        width: 100%;
+        height: 450px;
+        background-position:center;
+        background-size: cover;
+    }
+    cards-banner-one .content{
+        width: 100%;
+        height: 200px;
+        padding: 0px 0 0 0px;
+        color: #f1f1f1;
+        font-weight: 500;
+    }
+    
+    .cards-banner-one p,
+    .cards-banner-one h2 {
+        width: 255px;
+        margin: 15px 0 15px 0;
+        text-shadow: 3px 3px 3px #333;
+    }
+    
+    /*cards banner two*/
+    .cards-banner-two{
+        width: 100%;
+        height: 450px;
+        background-position: center;
+        background-size: cover;
+    }
+    .cards-banner-two .content{
+        width: 30%;
+        padding: 90px 0 0 30px;
+        color: #f1f1f1;
+    }
+    
+    .cards-banner-two p,
+    .cards-banner-two h2 {
+        width: 255px;
+        margin: 15px 0 15px 0;
+        text-shadow: 3px 3px 3px #333;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1365px) {
+    body {
+        font-size: 1rem;
+    }  
+    
+    a{
+        margin: 10px;
+    }
+    
+    .container{
+        width: 90%;
+        margin: auto;
+    }
+    
+    /* Navegacion*/
+    .nav-main{
+        font-size: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        padding: 10px 0;
+    }
+    .showcase{
+        background-position:center;
+        padding-bottom: 20px;
+        margin-bottom: 10px;
+        justify-content: flex-end;
+        text-align: center;
+    }
+    
+    /*Noticias*/
+    .new-cards{
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .new-cards img{
+        width: 100%;
+        height: auto;
+        -webkit-box-shadow: 0px 6px 9px 0px rgba(148,138,148,0.45);
+        -moz-box-shadow: 0px 6px 9px 0px rgba(148,138,148,0.45);
+        box-shadow: 0px 6px 9px 0px rgba(148,138,148,0.75);
+    }
+
+    .cards-banner-one{
+        width: 100%;
+        height: 450px;
+        background-position:center;
+        background-size: cover;
+    }
+    cards-banner-one .content{
+        width: 100%;
+        height: 200px;
+        padding: 0px 0 0 0px;
+        color: #f1f1f1;
+        font-weight: 500;
+    }
+    
+    .cards-banner-one p,
+    .cards-banner-one h2 {
+        width: 255px;
+        margin: 15px 0 15px 0;
+        text-shadow: 3px 3px 3px #333;
+    }
+    
+    /*cards banner two*/
+    .cards-banner-two{
+        width: 100%;
+        height: 450px;
+        background-position: center;
+        background-size: cover;
+    }
+    .cards-banner-two .content{
+        width: 30%;
+        padding: 90px 0 0 30px;
+        color: #f1f1f1;
+    }
+    
+    .cards-banner-two p,
+    .cards-banner-two h2 {
+        width: 255px;
+        margin: 15px 0 15px 0;
+        text-shadow: 3px 3px 3px #333;
+    }
 }
